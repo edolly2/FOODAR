@@ -1,0 +1,17 @@
+REGISTER FOR AN ACCOUNT
+ 
+The first thing you need to do is register for an account.
+
+After registering you will able to sumbit requests for pickup and have
+your food delivered to your door!
+
+
+ORDER YOUR FOOD
+
+Place an order for food from a local restaurant and the system will
+automatically find the nearest driver at the best cost.
+
+CONFIRM YOUR REQUEST
+
+Before any request is submitted, you have the chance to review it and make 
+any changes or cancellations.
