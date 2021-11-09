@@ -1,6 +1,17 @@
+/* //TODO:Correct <title> elements filled out
+Foodar logo should be on all pages and link back to the Home page
+(index.html)
+A <header> and <footer> should be on all pages with correct links to
+each page.
+• The links should not display bullet points
+Font family choices should be consistent throughout project 
+Is the text color choice legible based on background color? */
+
 * {
   max-width: 100%;
   height: auto;
+  padding: 0;
+  margin: 0;
 }
 
 *,
@@ -13,10 +24,39 @@ html {
   box-sizing: border-box;
 }
 
+html,
 body {
   width: 100%;
   height: 100%;
+}
+
+body {
   overflow-x: hidden;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p,
+a,
+label,
+input,
+ul,
+li {
+  font-size: 18px;
+}
+
+a:hover {
+  color: red;
 }
 
 section {
@@ -29,10 +69,10 @@ img {
 
 header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   /* padding: 32px; */
-  border-bottom: 2px solid black;
+  padding: 32px;
 }
 
 h1 {
@@ -52,7 +92,6 @@ li {
 
 .site-brand {
   font-size: 40px;
-  padding: 32px;
   margin-left: 32px;
 }
 
@@ -88,32 +127,47 @@ p {
 }
 
 .banner {
-  /* width: 100%; */
+  position: absolute;
+  margin-left: 2000px;
+  top: 0;
+  left: 0;
+  right: 0;
   text-align: center;
   border-bottom: 2px solid black;
+  transition: all ease-in-out 2000ms;
+  background-color: #BF1E2E;
+  color: white;
+  text-shadow: 0 1px 2px black, 1px 0 2px black, 1px 1px 2px black, 0 -1px 2px black, -1px 0 2px black, -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black, -1px -1px 2px black;
 }
 
 .banner-title {
   text-align: center;
 }
 
-.signup-links {
-  /* margin-left: auto; */
-  /* margin-right: 200px; */
+.signup-links a {
+  text-decoration: none;
+  color: black;
 }
 
-.main-img {
-  width: 75%;
-  height: auto;
+.signup-links a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #BF1E2E;
 }
 
 .main-img-container {
-  padding: 16px;
-  display: flex;
-  justify-content: center;
+  padding: 64px;
+  text-align: center;
+  /* display: flex; */
+  /* justify-content: center; */
   width: 100%;
+  min-height: 500px;
   max-height: 500px;
   overflow: hidden;
+  background-image: url("./burger.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 
 main {
@@ -122,10 +176,121 @@ main {
 }
 
 .main-zip-input-container {
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+
+.main-text {
+  text-align: center;
 }
 
 #main-zip {
   height: 21px;
 }
+
+.ingredient-list {
+  text-align: left;
+}
+
+.ingredient-list li {
+  list-style: circle;
+}
+
+ol {
+  text-align: left;
+}
+
+ol li {
+  list-style: upper-roman;
+}
+
+.no-style {
+  list-style: circle;
+}
+
+
+.about-page {
+  text-align: center;
+}
+
+.page-title {
+  text-align: center;
+  background-color: #BF1E2E;
+  color: white;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  text-shadow: 0 1px 2px black, 1px 0 2px black, 1px 1px 2px black, 0 -1px 2px black, -1px 0 2px black, -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black, -1px -1px 2px black;
+}
+
+.register-form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-btn-container {
+  width: 100%;
+  text-align: center;
+}
+
+.register-btn {
+  width: 50%;
+  padding: 4px 16px;
+}
+
+.driver-title {
+  font-size: 24px;
+}
+
+.red {
+  color:#BF1E2E;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  background-color: #BF1E2E;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  color: gray;
+}
+
+footer h3 {
+  border-bottom: 2px solid black;
+}
+
+.footer-legal-container, .footer-nav-container {
+  text-align: center;
+}
+
+.footer-legal-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 16px;
+  align-items: flex-start;
+}
+
+.copyright-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 16px;
+  color: black;
+}
+

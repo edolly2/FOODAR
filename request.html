@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Request Food</title>
+  </head>
+  <body>
+    <header>
+      <div class="site-brand-cont">
+        <a href="/"
+          ><img class="site-brand" src="./foodar _logo.png" alt="#"
+        /></a>
+      </div>
+      <div class="signup-links">
+        <a href="/">SIGN-IN</a> <span class="red">/</span>
+        <a href="/register.html">REGISTER</a> <span class="red">/</span>
+        <a href="/request.html">REQUEST</a>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="page-title">Request</h1>
+      <section>
+        <div>
+          <p>Please fill out the form below:</p>
+          <form action="#" id="form">
+            <div class="form-group">
+              <h5>Email:</h5>
+              <div>
+                <input
+                  class="name-input"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+              <h5>Restaurant:</h5>
+              <div>
+                <input
+                  class="name-input"
+                  type="text"
+                  name="restaurant"
+                  placeholder="Restaurant"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <h5>Choose Your Style:</h5>
+              <div class="inline-radio">
+                <label for="style">Classic</label>
+                <input class="food-style" type="radio" name="style" value="3" />
+              </div>
+              <div class="inline-radio">
+                <label for="style">Premium</label>
+                <input class="food-style" type="radio" name="style" value="5" />
+              </div>
+              <div class="inline-radio">
+                <label for="style">Royal</label>
+                <input
+                  class="food-style"
+                  type="radio"
+                  name="style"
+                  value="10"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <h5>Add Tip:</h5>
+              <div class="inline-radio">
+                <label for="style">10%</label>
+                <input class="food-tip" type="radio" name="tip" value="10" />
+              </div>
+              <div class="inline-radio">
+                <label for="style">15%</label>
+                <input class="food-tip" type="radio" name="tip" value="15" />
+              </div>
+              <div class="inline-radio">
+                <label for="style">20%</label>
+                <input class="food-tip" type="radio" name="tip" value="20" />
+              </div>
+            </div>
+            <div>
+              <h5>Total: $<span id="total"></span></h5>
+
+              <input type="submit" value="REQUEST" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <hr />
+    <footer>
+        <div class="footer-links-section">
+          <div class="footer-nav-container">
+            <nav>
+              <ul>
+                <h3>Site Map</h3>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/register.html">Register</a></li>
+                <li><a href="/request.html">Request</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-quote-container">
+            <h3>I LOVE YOU!</h3>
+          </div>
+          <div class="footer-legal-container">
+            <h3>Legal</h3>
+            <a href="/">Privacy Policy</a>
+            <a href="/">Terms & Conditions</a>
+          </div>
+         
+        </div>
+        <hr/>
+        <div class="copyright-container">
+          <p>&copy;2021. All rights reserved.</p>      
+        </div>
+      </footer>
+  </body>
+</html>
+<!-- 
+//TODO:Calculation works correctly 
+//TODO:Links work correctly. -->
